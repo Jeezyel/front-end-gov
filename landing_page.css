@@ -1,0 +1,159 @@
+
+:root{
+    --cor-principal: #0061A8;
+  --tamanho-fonte: 16px;
+  --margem-padrao: 20px;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/*roda pe*/
+.rodape {
+    background-color: #FFFFFF;
+    color: #003366;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 3px solid #003366;
+}
+
+.TituloColunaRodaPe{
+    text-transform: uppercase; /* Converte todas as letras para maiúsculas */
+    font-weight: bold;
+    color:var(--cor-principal);
+}
+
+.rodape .rodape-conteudo {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: var(--cor-principal);
+    font-size: 32px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo img {
+    max-width: 300px; /* Tamanho máximo da logo */
+    width: 100%; /* A logo vai preencher até o máximo de 300px */
+    height: auto;
+}
+
+.logo2 {
+    text-align: left;
+}
+
+.logo2 img {
+    max-width: 150px; /* Tamanho máximo da logo */
+    width: 100%; /* A logo vai preencher até o máximo de 300px */
+    height: auto;
+}
+
+/* Estilos das colunas de links */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-left: 10px;
+}
+
+.coluna {
+    text-align: left;
+    border-left: 10%;
+}
+
+.coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna ul li {
+    margin-bottom: 10px;
+}
+
+.coluna ul li a {
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-size: 16px;
+}
+
+.coluna ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Barra de pesquisa e ícones de redes sociais alinhados */
+.search-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #0061A8;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 60%;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.search-bar button {
+    background-color: #0061A8;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Ícones de redes sociais */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* Efeito de hover para os ícones */
+.social-icon img:hover {
+    opacity: 0.7;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .coluna {
+        margin-bottom: 20px;
+    }
+}
