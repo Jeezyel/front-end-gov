@@ -7,7 +7,6 @@
     <title>landing_page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='landing_page.css'>
-    <script src='landing_page.js'></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -52,7 +51,106 @@
     </div>
     <div class="conteudo">
 
-        <br>
+
+
+        <div class="menu">
+            <span class="menu-icon">&#9776;</span> <!-- ícone de menu -->
+            <a href="#">OUVIDORIA</a>
+            <a href="#">PORTAL DA TRANSPARÊNCIA</a>
+            <a href="#">CONTATO</a>
+        </div>
+
+        <div class="noticia-container">
+            <div class="noticia-imagem">
+                <img src="imagens/foto da juventude.jpg" alt="Imagem da notícia">
+            </div>
+            <div class="noticia-conteudo">
+                <div>
+                    <h3>CURABITUR ET METUS LOREM</h3>
+                    <p>Phasellus tempor felis eu placerat eleifend. Morbi aliquam eget turpis in suscipit. Sed accumsan
+                        turpis sit amet leo commodo.</p>
+                    <a class="ler-mais" href="#">LER MAIS...</a>
+                </div>
+            </div>
+        </div>
+        <div class="cabecalho">
+            <div style="font-weight: bold;">ÚLTIMAS NOTÍCIAS</div>
+            <button>Mais notícias</button>
+        </div>
+
+        <div class="carrossel-container">
+            <div class="carrossel" id="carrossel">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="imagens/foto da juventude.jpg" alt="Imagem">
+                    <div class="categoria">DECRETO</div>
+                    <div class="conteudo">
+                        <h3>CURABITUR ET METUS LOREM</h3>
+                        <p>Phasellus tempor felis eu placerat eleifend. Morbi aliquam eget turpis in suscipit.</p>
+                        <a href="#">LER MAIS...</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="imagens/foto da juventude.jpg" alt="Imagem">
+                    <div class="categoria">APM/DA CAPITAL</div>
+                    <div class="conteudo">
+                        <h3>CURABITUR ET METUS LOREM</h3>
+                        <p>Phasellus tempor felis eu placerat eleifend. Morbi aliquam eget turpis in suscipit.</p>
+                        <a href="#">LER MAIS...</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="imagens/foto da juventude.jpg" alt="Imagem">
+                    <div class="categoria">PRAÇAS/ESPORTES</div>
+                    <div class="conteudo">
+                        <h3>CURABITUR ET METUS LOREM</h3>
+                        <p>Phasellus tempor felis eu placerat eleifend. Morbi aliquam eget turpis in suscipit.</p>
+                        <a href="#">LER MAIS...</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="imagens/foto da juventude.jpg" alt="Imagem">
+                    <div class="categoria">REPRESENTAÇÃO</div>
+                    <div class="conteudo">
+                        <h3>CURABITUR ET METUS LOREM</h3>
+                        <p>Phasellus tempor felis eu placerat eleifend. Morbi aliquam eget turpis in suscipit.</p>
+                        <a href="#">LER MAIS...</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/foto da juventude.jpg" alt="Imagem">
+                    <div class="categoria">REPRESENTAÇÃO</div>
+                    <div class="conteudo">
+                        <h3>CURABITUR ET METUS LOREM</h3>
+                        <p>Phasellus tempor felis eu placerat eleifend. Morbi aliquam eget turpis in suscipit.</p>
+                        <a href="#">LER MAIS...</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/foto da juventude.jpg" alt="Imagem">
+                    <div class="categoria">REPRESENTAÇÃO</div>
+                    <div class="conteudo">
+                        <h3>CURABITUR ET METUS LOREM</h3>
+                        <p>Phasellus tempor felis eu placerat eleifend. Morbi aliquam eget turpis in suscipit.</p>
+                        <a href="#">LER MAIS...</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="indicadores" id="indicadores"></div>
+        </div>
+
+
+
+
     </div>
 
 
@@ -112,7 +210,7 @@
                     </a>
                 </div>
             </div>
-            <div class="menu">
+            <div class="menuFooter">
                 <div class="coluna">
                     <ul>
                         <li class="TituloColunaRodaPe">MENU</li>
@@ -155,6 +253,8 @@
             </div>
         </div>
     </footer>
+
+    <script src='landing_page.js'></script>
 </body>
 
 </html>
