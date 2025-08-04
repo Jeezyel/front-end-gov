@@ -33,3 +33,4 @@ function atualizarIndicadores() {
 carrossel.addEventListener("scroll", atualizarIndicadores);
 window.addEventListener("load", atualizarIndicadores);
 
+

@@ -326,7 +326,6 @@ body {
     /* Sombra leve */
 }
 
-/*marcador*/
 .departamento {
     background-color: var(--cor-principal);
 }
@@ -372,7 +371,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
-    border-radius: 0; 
+    border-radius: 0;
 }
 
 .departamento .search-bar button:hover {
@@ -395,6 +394,110 @@ body {
 
 .menuDepartamento a:hover {
     text-decoration: underline;
+}
+
+/*marcador*/
+
+.cardAtalhos .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.cardAtalhos .card {
+    background-color: #fff;
+    border: 2px solid #0085ca;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.cardAtalhos .card:hover {
+    background-color: #0085ca;
+    color: #fff;
+}
+
+.cardAtalhos .card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.cardAtalhos .card p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.saibaMais {
+    text-align: right;
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.story .story-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* Alinha os itens à esquerda */
+    max-width: 1000px;
+    margin: 50px auto;
+
+}
+
+.story .title {
+    font-size: 2rem;
+    color: #4b8cfe;
+    margin-right: 30px;  /* Adiciona um espaço entre o título e o carrossel */
+    flex-shrink: 0;  /* Impede que o título encolha */
+}
+
+.story .carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;  /* Esconde qualquer conteúdo que saia dos limites */
+}
+
+.story .carousel-items {
+    display: flex;
+    width: 80%;  /* Ajusta a largura do carrossel */
+    justify-content: center;
+}
+
+.story .carousel-item {
+    margin: 0 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.story .carousel-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #4b8cfe;
+}
+
+.story .carousel-item p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: bold;
 }
 
 /*marcador*/
